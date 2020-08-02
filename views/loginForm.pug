@@ -1,0 +1,17 @@
+form(action="/checkData" method="POST" )
+        .form-group
+            label(for="email") Email
+            .input-group
+                .input-group-prepend
+                    .input-group-text @  
+                input.form-control#email(type="text" placeholder="Enter Email" name="email" size=30 required)
+        .form-group
+            label(for="pwd") Password
+            .input-group
+                .input-group-prepend
+                    .input-group-text #
+                input.form-control#pwd(type="password" placeholder="Enter Password" name="pwd" required)
+        .form-group.form-check
+                input.form-check-input#remme(type="checkbox") 
+                label.form-check-label(for="remme") Remember Me
+        button.btn.btn-success Submit

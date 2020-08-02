@@ -1,0 +1,12 @@
+#element{
+    position: relative;
+    animation: example 4s 2s 1;
+}
+
+@keyframes example{
+    0% {left:0%; }
+    25%{left:15%}
+    50% {left:0%}
+    75% {left:-15%}
+    100% { left:0%; }
+}
