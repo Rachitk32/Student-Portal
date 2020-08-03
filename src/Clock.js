@@ -25,13 +25,13 @@ class Clock extends React.Component{
   
     render(){
       return (
-        //  <div class="d-flex flex-column justify-content-center align-items-center" style={{height:"100vh"}}>
-        //     <div class="d-flex flex-column">  
-                // <div>
-                  this.state.date.toLocaleTimeString()
-                // </div>
-        //     </div>
-        //   </div>
+         <div class="d-flex flex-column justify-content-center align-items-center" style={{height:"100vh"}}>
+            <div class="d-flex flex-column">  
+                <div className="display-1 text-white">
+                  {this.state.date.toLocaleTimeString()}
+                </div>
+            </div>
+          </div>
        
       );
     }

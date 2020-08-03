@@ -7,9 +7,6 @@ class LoginForm extends React.Component
             <div className="container-fluid" style={{height:"100vh"}}>
               <div className="d-flex flex-column justify-content-center align-items-center" style={{height:100+"%"}}>
                 <div className="d-flex flex-column bg-white rounded p-5" id="element">
-                  <div className="align-self-end">
-                      Time: {this.props.Clock1}
-                  </div>
                   <form action="#" >
                     <div className="form-group">
                       <label htmlFor="email">Email</label>
