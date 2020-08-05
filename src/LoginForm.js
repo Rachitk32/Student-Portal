@@ -1,7 +1,8 @@
 import React from 'react';
 
 class LoginForm extends React.Component
-{   render()
+{   
+  render()
     {
          return (
             <div className="container-fluid" style={{height:"100vh"}}>
@@ -14,7 +15,7 @@ class LoginForm extends React.Component
                         <div className="input-group-prepend">
                           <div className="input-group-text">@</div>
                         </div>
-                        <input className="form-control" id="email" type="text" placeholder="Enter Email" name="email" size="30" required autoFocus autoComplete="off"/>
+                        <input className="form-control" id="email" type="text" placeholder="Enter Email" name="email" size="30"  autoFocus autoComplete="off"/>
                       </div>
                     </div>
             
@@ -24,16 +25,16 @@ class LoginForm extends React.Component
                         <div className="input-group-prepend">
                           <div className="input-group-text">#</div>
                         </div>
-                        <input className="form-control" id="pwd" type="password" placeholder="Enter Password" name="pwd" required/>
+                        <input className="form-control" id="pwd" type="password" placeholder="Enter Password" name="pwd" />
                       </div>
                     </div>
             
                     <div className="form-group form-check">
-                      <input className="form-check-input" id="remme" type="checkbox" required/>
+                      <input className="form-check-input" id="remme" type="checkbox" />
                       <label className="form-check-label" htmlFor="remme">Fuck Me</label>
                     </div>
             
-                    <button className="btn btn-success">Submit</button>
+                    <button  className="btn btn-success">Submit</button>
                     
                   </form>
                 </div>
