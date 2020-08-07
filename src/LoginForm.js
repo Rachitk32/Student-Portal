@@ -1,7 +1,29 @@
 import React from 'react';
-
+import ReactDOM from 'react-dom';
 class LoginForm extends React.Component
 {   
+  constructor(props)
+  {
+    super(props);
+    this.submitHandle=this.submitHandle.bind(this);
+  }
+  submitHandle()
+  {
+    const element=
+    (
+        <div class="d-flex flex-column justify-content-center align-items-center" style={{height:"100vh"}}>
+        <div class="d-flex flex-column">  
+            <div className="display-1 text-white">
+               You will be fucked in both holes today.
+            </div>
+        </div>
+        </div>
+    );
+
+    ReactDOM.render(element,document.getElementById('root'));
+
+  }
+
   render()
     {
          return (
@@ -15,7 +37,7 @@ class LoginForm extends React.Component
                         <div className="input-group-prepend">
                           <div className="input-group-text">@</div>
                         </div>
-                        <input className="form-control" id="email" type="text" placeholder="Enter Email" name="email" size="30"  autoFocus autoComplete="off"/>
+                        <input className="form-control" id="email" type="text" placeholder="Enter Email" name="email" size="30"  autoFocus autoComplete="on" required/>
                       </div>
                     </div>
             
@@ -25,16 +47,16 @@ class LoginForm extends React.Component
                         <div className="input-group-prepend">
                           <div className="input-group-text">#</div>
                         </div>
-                        <input className="form-control" id="pwd" type="password" placeholder="Enter Password" name="pwd" />
+                        <input className="form-control" id="pwd" type="password" placeholder="Enter Password" name="pwd" required />
                       </div>
                     </div>
             
                     <div className="form-group form-check">
-                      <input className="form-check-input" id="remme" type="checkbox" />
-                      <label className="form-check-label" htmlFor="remme">Fuck Me</label>
+                      <input className="form-check-input" id="remme" type="checkbox" required />
+                      <label className="form-check-label" htmlFor="remme">Fuck Me Hard!!</label>
                     </div>
             
-                    <button  className="btn btn-success">Submit</button>
+                    <button  onClick={this.submitHandle} className="btn btn-success">Submit</button>
                     
                   </form>
                 </div>
