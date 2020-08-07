@@ -14,7 +14,7 @@ class LoginForm extends React.Component
         <div class="d-flex flex-column justify-content-center align-items-center" style={{height:"100vh"}}>
         <div class="d-flex flex-column">  
             <div className="display-1 text-white">
-               You will be fucked in both holes today.
+              Login Succesfull!
             </div>
         </div>
         </div>
@@ -47,13 +47,13 @@ class LoginForm extends React.Component
                         <div className="input-group-prepend">
                           <div className="input-group-text">#</div>
                         </div>
-                        <input className="form-control" id="pwd" type="password" placeholder="Enter Password" name="pwd" required />
+                        <input className="form-control" id="pwd" type="password" placeholder="Enter Password" name="pwd" required/>
                       </div>
                     </div>
             
                     <div className="form-group form-check">
                       <input className="form-check-input" id="remme" type="checkbox" required />
-                      <label className="form-check-label" htmlFor="remme">Fuck Me Hard!!</label>
+                      <label className="form-check-label" htmlFor="remme">Remember Me</label>
                     </div>
             
                     <button  onClick={this.submitHandle} className="btn btn-success">Submit</button>

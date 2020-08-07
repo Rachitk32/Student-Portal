@@ -13,7 +13,7 @@ class Register extends React.Component
                     <div className="d-flex justify-content-between">
                         <div className="form-group">
                           <label htmlFor="fname">First Name</label>
-                          <input className="form-control" type='text' name="fname" id='fname' size="20" placeholder="First name" required/>
+                          <input className="form-control" type='text' name="fname" id='fname' size="20" placeholder="First name"  autoFocus required/>
                         </div>
 
                         <div className="form-group ">
@@ -24,7 +24,7 @@ class Register extends React.Component
                     {/* Username */}
                     <div className="form-group">
                       <label htmlFor="uname">Username</label>
-                        <input className="form-control" id="uname" type="text" placeholder="Username" name="uname" size="50" required autoFocus autoComplete="off"/>
+                        <input className="form-control" id="uname" type="text" placeholder="Username" name="uname" size="50" required  autoComplete="off"/>
                      </div>
                     {/* Password and confirm password  and Eye*/}
                     <div class="d-flex justify-content-between">
@@ -41,7 +41,7 @@ class Register extends React.Component
                         <div>
                             <div className="input-group-text">
                               <a className="text-dark">
-                                  <img height="20px" width="20px" src="static/media/Eye.da594bbb.png" alt="eye"></img>
+                                  <img height="20px" width="20px" src={Eye} alt="eye"></img>
                               </a>
                             </div>
                           </div>
@@ -52,7 +52,7 @@ class Register extends React.Component
                     {/* Checkbox */}
                     <div className="form-group form-check">
                       <input className="form-check-input" id="remme" type="checkbox" required/>
-                      <label className="form-check-label" htmlFor="remme">I agree to let you guys fuck me!</label>
+                      <label className="form-check-label" htmlFor="remme">I agree to terms and conditions.</label>
                     </div>
                     {/* Register Button */}
                     <div classnName="form-group">
