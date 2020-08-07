@@ -41,7 +41,7 @@ class Register extends React.Component
                         <div>
                             <div className="input-group-text">
                               <a className="text-dark">
-                                  <img height="20px" width="20px" src={Eye} alt="eye"></img>
+                                  <img height="20px" width="20px" src="static/media/Eye.da594bbb.png" alt="eye"></img>
                               </a>
                             </div>
                           </div>
