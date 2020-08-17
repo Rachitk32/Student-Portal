@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Mainpage from './Mainpage';
+import Homepage from './Homepage';
 
 ReactDOM.render(
- <Mainpage/>,
+ <Homepage/>,
   document.getElementById('root')
 );
