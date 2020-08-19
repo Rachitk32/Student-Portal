@@ -1,5 +1,4 @@
 import React from 'react';
-import Eye from './Eye.png';  
 class Register extends React.Component
 {   render()
     {
@@ -41,7 +40,7 @@ class Register extends React.Component
                         <div>
                             <div className="input-group-text">
                               <a className="text-dark">
-                                  <img height="20px" width="20px" src={Eye} alt="eye"></img>
+                                  <img height="20px" width="20px" src="Eye.png" alt="eye"></img>
                               </a>
                             </div>
                           </div>
