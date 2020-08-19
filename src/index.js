@@ -19,4 +19,7 @@ ReactDOM.render(
  <Homepage/>,
   document.getElementById('root')
 );
+<<<<<<< HEAD
+>>>>>>> 16515b58b60311f42d67ab26c4327accda9e171f
+=======
 >>>>>>> 16515b58b60311f42d67ab26c4327accda9e171f
