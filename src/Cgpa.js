@@ -2,7 +2,7 @@ import React from 'react';
 
 function cgpa() {
   return (
-      <div className="cgpa">
+      <div className="cgpa" style={{height:"10vh"}}>
           <h1>Notification</h1>
           <p>asdadfasdfsdfjhsvcihzvc
               ancababsabjkabsc

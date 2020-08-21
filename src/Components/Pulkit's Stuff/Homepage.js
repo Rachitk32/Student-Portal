@@ -1,10 +1,12 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 
-function Nav(){
-    return(
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <Link className="navbar-brand" to="/">Student Portal</Link>
+class Homepage extends React.Component
+{
+    render()
+    {
+        return(
+  <nav className="navbar navbar-expand-lg navbar-light bg-light">
+  <a className="navbar-brand" href="/">Student Portal</a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" >
     <span className="navbar-toggler-icon"></span>
   </button>
@@ -12,24 +14,24 @@ function Nav(){
   <div className="collapse navbar-collapse" id="navbarSupportedContent">
     <ul className="navbar-nav mr-auto">
       <li className="nav-item active">
-      <Link className="nav-link" to="/notification">Notifications</Link>
+        <a className="nav-link" href="/">Notifications</a>
       </li>
       <li className="nav-item">
-      <Link className="nav-link" to="/cgpa">CGPA Calculator</Link>
+        <a className="nav-link" href="/">CGPA Calculator</a>
       </li>
       <li className="nav-item dropdown">
-      <Link className="nav-link dropdown-toggle" to="/resources" id="navbarDropdown" role="button" data-toggle="dropdown" >
+        <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" >
           Resources
-      </Link>
+        </a>
         <div className="dropdown-menu" >
-        <Link className="dropdown-item" to="/">Languages</Link>
-          <Link className="dropdown-item" to="/">Data Structures &amp; Algorithms</Link>
+          <a className="dropdown-item" href="/">Languages</a>
+          <a className="dropdown-item" href="/">Data Structures &amp; Algorithms</a>
           <div className="dropdown-divider"></div>
-          <Link className="dropdown-item" to="/">Others</Link>
+          <a className="dropdown-item" href="/">Others</a>
         </div>
       </li>
       <li className="nav-item">
-      <Link className="nav-link disabled" to="/"  aria-disabled="true">Coming Soon...</Link>
+        <a className="nav-link disabled" href="/">Coming Soon...</a>
       </li>
     </ul>
     <form className="form-inline my-2 my-lg-0">
@@ -38,7 +40,7 @@ function Nav(){
     </form>
   </div>
 </nav>
-    );
+        )
+    }
 }
-
-export default Nav;
+export default Homepage;

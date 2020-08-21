@@ -12,7 +12,7 @@ function App() {
       <div className="App">
         <Nav />
         <Switch>
-        <Route path="/cgpa" component={Cgpa} />
+          <Route path="/cgpa" component={Cgpa} />
           <Route path="/notification" component={Notification} />
           {/* <Route path="/resources" component={Resources} /> */}
         </Switch>
